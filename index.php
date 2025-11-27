@@ -36,7 +36,7 @@ $classe_extra = "Instagram";
         <h1> <?php echo $nome; ?> </h1>
         <p> <?php echo $bio; ?> </p>
 
-        <?php
+        <?php 
 
         foreach ($links as $texto => $url) {
             $classe_extra = "";
