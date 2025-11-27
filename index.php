@@ -36,12 +36,14 @@ $classe_extra = "Instagram";
         <h1> <?php echo $nome; ?> </h1>
         <p> <?php echo $bio; ?> </p>
 
-        <?php 
+
+
+        <?php
 
         foreach ($links as $texto => $url) {
             $classe_extra = "";
 
-            if ($url == "https://www.instagram.com/yan.remedi/")
+            if ($texto == "Instagram")
                 $classe_extra = "destaque";
         }
 
@@ -61,8 +63,12 @@ $classe_extra = "Instagram";
                       </a>";
             }
             ?>
+
+            <div class="area-contato">
+                <a href="contato.php" class="btn-msg">📧 Mandar Mensagem</a>
+            </div>
         </div>
-    </div>
+
 </body>
 
 </html>
