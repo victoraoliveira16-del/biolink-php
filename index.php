@@ -13,8 +13,8 @@ $links = [
     "Música Favorita do Momemnto" => "https://youtu.be/fCeiUX59_FM?si=yZYO0FKj__msR_nx"
 ];
 
-// Defina aqui qual link será o VIP (destaque).
-$vip = "Instagram"; // exemplo: 'Instagram'
+
+$classe_extra = "Instagram";
 
 ?>
 
@@ -36,6 +36,16 @@ $vip = "Instagram"; // exemplo: 'Instagram'
         <h1> <?php echo $nome; ?> </h1>
         <p> <?php echo $bio; ?> </p>
 
+        <?php
+
+        foreach ($links as $texto => $url) {
+            $classe_extra = "";
+
+            if ($url == "https://www.instagram.com/yan.remedi/")
+                $classe_extra = "destaque";
+        }
+
+        ?>
 
         <div class="lista-links">
             <?php
